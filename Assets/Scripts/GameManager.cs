@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     PlayersManager playersManager;
     bool pauseEachFrame;
-    public static float slowMotionDuration = 8f; // number of frames
+    public static float slowMotionDuration = 5f; // number of frames
     public static int slowMotionAmount = 3;
     void Start()
     {

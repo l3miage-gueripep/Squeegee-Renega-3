@@ -95,7 +95,7 @@ public class CharacterActionsManager : MonoBehaviour
                 //prevents attack for hitting one enemy multiple times
                 if (!alreadyHitEnemies.Contains(hitEnemy))
                 {
-                    hitEnemy.GetComponent<Character>().TakeHit(attack, character);
+                    StartCoroutine(hitEnemy.GetComponent<Character>().TakeHit(attack, character));
                     alreadyHitEnemies.Add(hitEnemy);
                 }
             }

@@ -369,7 +369,7 @@ MonoBehaviour:
   scale: 10
   jumpForce: 20
   runtimeAnimatorController: {fileID: 9100000, guid: 09a1003bd6be4794e93e51eb2d8e9743, type: 2}
-  rigidbody2D: {fileID: 0}
+  rb2d: {fileID: 0}
   boxCollider2D: {fileID: 0}
   animator: {fileID: 0}
   animationsManager: {fileID: 0}
@@ -382,6 +382,7 @@ MonoBehaviour:
   airbornCharacterLayer:
     serializedVersion: 2
     m_Bits: 0
+  gameManager: {fileID: 0}
 --- !u!114 &637580877949265544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,6 +434,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c64421429f92345aa45c417fcd1d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  justJumped: 0
+  isGrounded: 0
+  isMoving: 0
+  isRunning: 0
 --- !u!1 &7604166425053194084
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,4 +490,4 @@ MonoBehaviour:
   animatorOverrideController: {fileID: 22100000, guid: 1763886f0840e4141bd8381315e7656e, type: 2}
   knockbackPower: 8
   hitStunDuration: 40
-  knockBackDirection: {x: 0.7, y: 1}
+  knockBackDirection: {x: 1, y: 1}

@@ -97,7 +97,7 @@ public class CharacterAnimationsManager : MonoBehaviour
     public IEnumerator TakeHit(int stunDuration)
     {
         character.animator.SetBool("hit", true);
-        StartCoroutine(character.movementManager.Shake());
+/*        StartCoroutine(character.movementManager.Shake());*/
         yield return new WaitForSeconds(GameManager.slowMotionDuration / 60);
         character.animator.SetBool("stunned", true);
         character.animator.SetBool("hit", false);

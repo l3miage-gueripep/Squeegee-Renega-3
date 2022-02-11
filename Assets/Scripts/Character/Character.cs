@@ -81,12 +81,12 @@ public class Character : MonoBehaviour
     {
         return parryStartupFrames + parryActiveFrames + parryRecoveryFrames;
     }
-    public void TakeHit(Attack attack, Character hitter)
+    public IEnumerator TakeHit(Attack attack, Character hitter)
     {
 
         if (!stateManager.IsParrying())
         {
-            StartCoroutine(GameManager.HitSlowMotion());
+            yield return StartCoroutine(GameManager.HitSlowMotion()); //slow mo
             StartCoroutine(animationsManager.TakeHit(attack.hitStunDuration)); //animation
             movementManager.TakeHit(attack, hitter);
         }

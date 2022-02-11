@@ -5,6 +5,7 @@ Packages/
 .vs/
 build/
 UserSettings/
+Temp/
 *.sln
 *.zip   
 .vsconfig
