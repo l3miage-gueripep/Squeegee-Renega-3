@@ -4,4 +4,8 @@ obj/
 Packages/
 .vs/
 build/
+UserSettings/
+*.sln
 *.zip   
+.vsconfig
+*.csproj
